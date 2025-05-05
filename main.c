@@ -3,14 +3,14 @@
 #include <stdbool.h>
 #include <locale.h>
 
-// FunÁ„o para calcular a sequÍncia de Fibonacci (feita por Filippo)
+// Fun√ß√£o para calcular a sequ√™ncia de Fibonacci (feita por Filippo)
 void fibonacci() {
     int N;
-    printf("Digite a quantidade de termos da sequÍncia de Fibonacci (1 a 50): ");
+    printf("Digite a quantidade de termos da sequ√™ncia de Fibonacci (1 a 50): ");
     scanf("%d", &N);
 
     if (N < 1 || N > 50) {
-        printf("N˙mero fora do intervalo permitido!\n");
+        printf("N√∫mero fora do intervalo permitido!\n");
         return;
     }
 
@@ -24,21 +24,21 @@ void fibonacci() {
         fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
     }
 
-    printf("SequÍncia de Fibonacci: ");
+    printf("Sequ√™ncia de Fibonacci: ");
     for (int i = 0; i < N; i++) {
         printf("%d ", fibonacci[i]);
     }
     printf("\n");
 }
 
-// FunÁ„o para calcular os fatoriais (feita por Pedro)
+// Fun√ß√£o para calcular os fatoriais (feita por Pedro)
 void fatoriais() {
     int N;
-    printf("Digite um n˙mero inteiro (1 a 20): ");
+    printf("Digite um n√∫mero inteiro (1 a 20): ");
     scanf("%d", &N);
 
     if (N < 1 || N > 20) {
-        printf("N˙mero fora do intervalo permitido!\n");
+        printf("N√∫mero fora do intervalo permitido!\n");
         return;
     }
 
@@ -55,7 +55,7 @@ void fatoriais() {
     }
 }
 
-// FunÁ„o para verificar se uma palavra È um palÌndromo (feita por Gustavo)
+// Fun√ß√£o para verificar se uma palavra √© um pal√≠ndromo (feita por Gustavo)
 void palindromo() {
     char palavra[101];
     printf("Digite uma palavra: ");
@@ -72,13 +72,13 @@ void palindromo() {
     }
 
     if (is_palindrome) {
-        printf("A palavra È um palÌndromo.\n");
+        printf("A palavra √© um pal√≠ndromo.\n");
     } else {
-        printf("A palavra N√O È um palÌndromo.\n");
+        printf("A palavra N√ÉO √© um pal√≠ndromo.\n");
     }
 }
 
-// FunÁ„o para verificar se uma string È uma substring de outra (feita por Filippo)
+// Fun√ß√£o para verificar se uma string √© uma substring de outra (feita por Filippo)
 void substring() {
     char str1[101], str2[101];
     printf("Digite a primeira string: ");
@@ -87,9 +87,9 @@ void substring() {
     scanf("%s", str2);
 
     if (strstr(str1, str2)) {
-        printf("A segunda string est· contida na primeira.\n");
+        printf("A segunda string est√° contida na primeira.\n");
     } else {
-        printf("A segunda string N√O est· contida na primeira.\n");
+        printf("A segunda string N√ÉO est√° contida na primeira.\n");
     }
 }
 
@@ -99,13 +99,13 @@ int main() {
 
     // Menu principal
     do {
-        printf("===== MENU DE EXERCÕCIOS =====\n");
-        printf("1 - SequÍncia de Fibonacci\n");
+        printf("===== MENU DE EXERC√çCIOS =====\n");
+        printf("1 - Sequ√™ncia de Fibonacci\n");
         printf("2 - Fatoriais\n");
-        printf("3 - Verificar PalÌndromo\n");
+        printf("3 - Verificar Pal√≠ndromo\n");
         printf("4 - Verificar Substring\n");
         printf("0 - Sair\n");
-        printf("Escolha uma opÁ„o: ");
+        printf("Escolha uma op√ß√£o: ");
         scanf("%d", &opcao);
 
         switch (opcao) {
@@ -125,13 +125,13 @@ int main() {
                 printf("Saindo do programa...\n");
                 break;
             default:
-                printf("OpÁ„o inv·lida! Tente novamente.\n");
+                printf("Op√ß√£o inv√°lida! Tente novamente.\n");
         }
     } while (opcao != 0);
 
     return 0;
 }
 // integrantes:
-// Pedro Henrique Souza Barreto 564437
 // Filippo Picino Mendez 565994
+// Pedro Henrique Souza Barreto 564437
 // Gustavo Henrique Rodovalho 563695
